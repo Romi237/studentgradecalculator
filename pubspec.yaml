@@ -1,9 +1,18 @@
 name: studentgradecalculator
-
-description: A simple console application to calculate student grades.
+description: A student grade calculator with GUI that processes Excel/PDF files
+version: 1.0.0
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
 
 dependencies:
-  # no external dependencies
+  flutter:
+    sdk: flutter
+  excel: ^2.0.0  # For Excel file processing
+  pdf: ^3.10.4   # For PDF generation
+  file_picker: ^5.3.3  # For file selection
+  path_provider: ^2.1.0  # For file system access
+  open_file: ^3.3.2  # To open generated files
+
+flutter:
+  uses-material-design: true
